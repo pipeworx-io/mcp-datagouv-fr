@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-datagouv-fr",
+  "version": "0.1.0",
+  "description": "France data.gouv.fr open-data catalogue",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagouv-fr"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-datagouv-fr"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
