@@ -1,19 +1,21 @@
-# mcp-datagouv-fr
+# @pipeworx/datagouv-fr
 
-data.gouv.fr MCP — French open-data catalogue.
+[data.gouv.fr](https://www.data.gouv.fr) MCP — French national open-data catalogue. Keyless for read.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `search_datasets` | Search datasets. |
-| `dataset` | Single dataset by id or slug. |
-| `resources` | Resources (downloadable files) for a dataset. |
-| `search_organizations` | Search organizations. |
-| `organization` | Single organization by id or slug. |
-| `reuses_search` | Search reuses (apps/analyses built on datasets). |
+- `search_datasets(query?, organization?, tag?, page?, page_size?)` — dataset search
+- `dataset(id_or_slug)` — single dataset record
+- `resources(dataset_id_or_slug)` — list of downloadable resources for a dataset
+- `search_organizations(query?, page?, page_size?)` — org search
+- `organization(id_or_slug)` — single organization
+- `reuses_search(query?, page?, page_size?)` — search "reuses" (apps/analyses built on datasets)
+
+## Data source
+
+`https://www.data.gouv.fr/api/1/`
 
 ## Quick Start
 
@@ -29,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -53,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
