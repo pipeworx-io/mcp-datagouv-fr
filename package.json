@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagouv-fr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "data.gouv.fr MCP — French open-data catalogue.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-2a6e811cfd6e7fa10e4784458fe0215bf32a5b6ce63be1f530c6f4c0104c715d",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-33ad23b89d54b53e407c8125183aca1f8b29868673c89617fe8d04fa7c370e7d",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
