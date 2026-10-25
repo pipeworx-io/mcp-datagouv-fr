@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/datagouv-fr",
   "title": "Datagouv Fr",
   "description": "data.gouv.fr MCP — French open-data catalogue.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "websiteUrl": "https://pipeworx.io/packs/datagouv-fr",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-datagouv-fr",
