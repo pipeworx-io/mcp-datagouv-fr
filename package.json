@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datagouv-fr",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "data.gouv.fr MCP — French open-data catalogue.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datagouv-fr": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagouv-fr"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datagouv-fr.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datagouv-fr",
   "pipeworx": {
-    "sourceHash": "v1-602d41249fc7d01be518a22f96da5c0b4a6d6d52da233f7d8a2831191f872d37",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datagouv-fr",
+    "gatewaySlug": "datagouv-fr",
+    "sourceHash": "v1-7a0239573814a6075c39329572fd7fd95355130212881cd8dfb02927a9df8296",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
